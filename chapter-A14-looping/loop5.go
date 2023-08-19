@@ -1,0 +1,20 @@
+// A.14.5. Penggunaan Keyword break & continue
+// Keyword break digunakan untuk menghentikan secara paksa sebuah perulangan,
+// sedangkan continue dipakai untuk memaksa maju ke perulangan berikutnya.
+package main
+
+import "fmt"
+
+func main()  {
+	for i := 1; i<= 10; i++ {
+		if i % 2 == 1 {
+			continue
+		}
+
+		if i>8 {
+			break
+		}
+
+		fmt.Println("angka", i)
+	}
+}
