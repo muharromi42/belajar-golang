@@ -3,6 +3,15 @@ package main
 
 import "fmt"
 
-func main()  {
+func main(){
+	var chicken map[string]int
+	chicken = map[string]int{}
 
+	chicken["januari"] = 50
+	chicken["februari"] = 40
+
+	fmt.Println("januari", chicken["januari"])
+	fmt.Println("februari", chicken["februari"])
 }
+
+
